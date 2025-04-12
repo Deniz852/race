@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8564515309755342544}
   - component: {fileID: 8564515309755342550}
   - component: {fileID: 8564515309755342545}
-  - component: {fileID: 3539373294373237023}
   m_Layer: 0
   m_Name: CheckpointModel
   m_TagString: Untagged
@@ -84,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3539373294373237023
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8564515309755342547}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &8564515310597851019
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8564515310597851016}
+  - component: {fileID: 6673219889103765971}
+  - component: {fileID: 7300519235723007147}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Untagged
@@ -130,3 +117,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6673219889103765971
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564515310597851019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 3.6928024
+  m_Height: 15.487774
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.04757881, z: 0.06839752}
+--- !u!114 &7300519235723007147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564515310597851019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f4fe4f13e897248a3e66dce856d405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  routePoint: {fileID: 0}
+  model: {fileID: 8564515309755342547}
+  isActive: 0
